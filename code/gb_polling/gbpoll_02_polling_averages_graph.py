@@ -45,5 +45,5 @@ plot.legend.click_policy='hide'
 # show(plot)
 
 # Write out to final location
-output_file(filename=f"{projectfolder}/graphs/polling_avg.html")
+output_file(filename=f"{projectfolder}/output/graphs/polling_avg.html")
 save(plot)

@@ -26,7 +26,7 @@ polling['wt'] = np.where(polling['Client'].isna(), polling['wt'], polling['wt']/
 polling['wt_int'] = (polling['Voting Intention']*polling['wt'])
 
 # Convert odd party names 
-party_map = {'The Brexit Party': 'Reform', 'UK Independence Party (UKIP)': 'UKIP', 'Green Party': 'Green', 'Plaid Cymru': 'Plaid'}
+party_map = {'Reform UK': 'Reform', 'UK Independence Party (UKIP)': 'UKIP', 'Green Party': 'Green', 'Plaid Cymru': 'Plaid'}
 
 def conv_party(x):
   result = party_map.get(x, x)
